@@ -1,4 +1,4 @@
-mtime = 1599143529
+mtime = 1599148009
 [[pkgs]]
 type = "github"
 distrib = "e-exception-manager"
@@ -22,6 +22,7 @@ maintainer_email = ""
 license = "Proprietary"
 description = "# &#128165;  &#128165; Exception Manager  &#128165;  &#128165;\n\n## What it is?\n\nException Manager allows you to handle any exception and print the information about it (Exception Type, Exception Message, Exception Traceback...) to a file using a decorator before the method.\n\n## Usage\n\nException Manager prints the exception information to a file.\nThe path of that file can be default or custom. For example:\n\n ```python\nExceptionManager()\n```\n\nIn main.py file the default path will be \"main\" + \"_error.txt\" == **main_error.txt**\n\nOr user can define a `custom_path`:\n\n```python\nExceptionManager(custom_path)\n```\n\n#### Exception Manager can be used in two different ways:\n\n 1. Calling the decorator function with a default return value (@return_on_failure(value)).\n\n ```python\n    @return_on_failure([])\n    def function_name():\n        # function_body (without try/except)\n        test_list = ['A', 'B', 'C']\n        return test_list\n```\nIn this case, if exception occurs in the function_body, the returned value is `[]`. Try/except is not necessary in this example.\n\n 2. Calling `ExceptionManager(path).add_exception(error)` function from try/except in the code.\n\n ```python\n    def function_name():\n        # function_body (with try/except)\n        b = 0\n        try:\n            a = 1\n            if b > 3:\n                a = b\n        except Exception as error:\n            ExceptionManager().add_exception(error)\n        return a\n```"
 keywords = ""
+platform = "UNKNOWN"
 classifiers = "Programming Language :: Python :: 3"
 download_url = ""
 comment = ""
@@ -57,6 +58,7 @@ maintainer_email = ""
 license = "Proprietary"
 description = "# &#128165;  &#128165; Exception Manager  &#128165;  &#128165;\n\n## What it is?\n\nException Manager allows you to handle any exception and print the information about it (Exception Type, Exception Message, Exception Traceback...) to a file using a decorator before the method.\n\n## Usage\n\nException Manager prints the exception information to a file.\nThe path of that file can be default or custom. For example:\n\n ```python\nExceptionManager()\n```\n\nIn main.py file the default path will be \"main\" + \"_error.txt\" == **main_error.txt**\n\nOr user can define a `custom_path`:\n\n```python\nExceptionManager(custom_path)\n```\n\n#### Exception Manager can be used in two different ways:\n\n 1. Calling the decorator function with a default return value (@return_on_failure(value)).\n\n ```python\n    @return_on_failure([])\n    def function_name():\n        # function_body (without try/except)\n        test_list = ['A', 'B', 'C']\n        return test_list\n```\nIn this case, if exception occurs in the function_body, the returned value is `[]`. Try/except is not necessary in this example.\n\n 2. Calling `ExceptionManager(path).add_exception(error)` function from try/except in the code.\n\n ```python\n    def function_name():\n        # function_body (with try/except)\n        b = 0\n        try:\n            a = 1\n            if b > 3:\n                a = b\n        except Exception as error:\n            ExceptionManager().add_exception(error)\n        return a\n```\n\n\n"
 keywords = ""
+platform = "UNKNOWN"
 classifiers = "Programming Language :: Python :: 3"
 download_url = ""
 comment = ""
